@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MASSA — Furniture with weight</title>
+<meta name="description" content="MASSA makes sofas, chairs and tables in solid oak, walnut and linen. Demo storefront.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"></head>
+<body><div class="prog" id="pg"></div>
+<div class="pre" aria-hidden="true"><span>MASSA</span></div>
+<div class="bar">Free delivery on orders over $2,500 · Demo store, nothing here ships</div>
+<header><div class="wrap"><div class="nav">
+<button class="burger" id="bg" aria-expanded="false" aria-controls="mn">Menu</button>
+<a class="logo" href="#top" aria-label="MASSA home">MASSA</a>
+<nav class="links" aria-label="Main"><a href="#shop">Shop</a><a href="#rooms">Rooms</a><a href="#lookbook">Lookbook</a><a href="#craft">Craft</a></nav>
+<div class="tools"><button id="sb" aria-label="Search">Search</button><button class="cartbtn" id="cb" aria-label="Open cart">Cart <b id="cc">0</b></button></div></div>
+<nav class="mnav" id="mn" aria-label="Mobile"><a href="#shop">Shop</a><a href="#rooms">Rooms</a><a href="#lookbook">Lookbook</a><a href="#craft">Craft</a></nav></div></header>
+<main id="top">
+<section class="hx wrap"><div><span class="pill"><i></i>Autumn 2026 collection</span>
+<h1 class="serif"><span class="ln"><span>Heavy things</span></span><span class="ln"><span>should sit</span></span><span class="ln"><span>still.</span></span></h1>
+<p class="lead">Sofas, chairs and tables in solid oak, walnut and heavy linen. Made to stay where you put them for a few decades.</p>
+<div class="cta"><a class="btn" href="#shop">Shop the collection <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn o" href="#lookbook">See it in a room</a></div></div>
+<div class="hv"><div class="main"><img data-i="13" data-p="40% 60%" alt="Oak-framed linen sofa and slab coffee table in a plastered room" fetchpriority="high" data-par=".07" data-sc="1.14"></div>
+<div class="sm"><img data-i="2" alt="Sculpted ceramic vessel on a travertine table"></div>
+<div class="chip"><img data-i="10" alt=""><span><b style="font-weight:500">Dusk Sofa</b><br>$5,900</span><button data-add="dusk">Add</button></div></div></section>
+<div class="mq" aria-hidden="true"><div class="mt"><span>Solid oak</span><span>Walnut</span><span>Heavy linen</span><span>Bouclé</span><span>Honed marble</span><span>Oiled finish</span><span>Solid oak</span><span>Walnut</span><span>Heavy linen</span><span>Bouclé</span><span>Honed marble</span><span>Oiled finish</span></div></div>
+<section class="trust wrap" aria-label="Service"><div class="rv" style="--d:0.0s"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="1.6"/><circle cx="17" cy="18" r="1.6"/></svg><span><b style="font-weight:500">Free delivery</b><small>On orders over $2,500</small></span></div><div class="rv" style="--d:0.08s"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 1 0 3-6.2M4 4v4h4"/></svg><span><b style="font-weight:500">30-day returns</b><small>Free pickup, no questions</small></span></div><div class="rv" style="--d:0.16s"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/></svg><span><b style="font-weight:500">10-year warranty</b><small>On every timber frame</small></span></div><div class="rv" style="--d:0.24s"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 6l4 4-9 9H5v-4zM12 8l4 4"/></svg><span><b style="font-weight:500">Assembly included</b><small>Placed in the room you choose</small></span></div></section>
+<section class="intro wrap"><p class="k rv">Our idea</p><h2 class="serif wr">We make fewer pieces, in better materials, and design each one to look settled in a room rather than arranged.</h2><p class="s rv">Every MASSA piece starts as a drawing of a shadow. If the shape holds up in raking light, it goes to the workshop.</p></section>
+<section class="wrap sec" id="shop"><div class="shophead"><h2 class="serif">The collection</h2>
+<div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center"><div class="filters" id="fl" role="group" aria-label="Filter by category"></div>
+<label for="so" style="position:absolute;left:-9999px">Sort</label><select class="sort" id="so"><option value="f">Featured</option><option value="a">Price, low to high</option><option value="d">Price, high to low</option></select></div></div>
+<div id="sq" style="margin-bottom:20px;display:none"><input id="si" type="search" placeholder="Search pieces" aria-label="Search products" class="sort" style="width:min(360px,100%)"></div>
+<div class="grid" id="gd" aria-live="polite"></div></section>
+<section class="wrap sec" id="rooms"><div class="sh"><h2 class="serif rv">Shop by room</h2><p class="rv">Start with the piece that anchors the space, then build around it.</p></div><div class="bt"><button class="tl rv" data-cat="Sofas" style="--d:0.0s"><img data-i="13" data-lazy alt=""><span class="tg"><b>Sofas</b><small>4 pieces</small></span><span class="ar" aria-hidden="true">↗</span></button><button class="tl rv" data-cat="Seating" style="--d:0.08s"><img data-i="3" data-lazy alt=""><span class="tg"><b>Seating</b><small>2 pieces</small></span><span class="ar" aria-hidden="true">↗</span></button><button class="tl rv" data-cat="Tables" style="--d:0.16s"><img data-i="11" data-lazy alt=""><span class="tg"><b>Tables</b><small>2 pieces</small></span><span class="ar" aria-hidden="true">↗</span></button><button class="tl rv" data-cat="Objects" style="--d:0.24s"><img data-i="2" data-lazy alt=""><span class="tg"><b>Objects</b><small>1 piece</small></span><span class="ar" aria-hidden="true">↗</span></button></div><ul id="cl" hidden></ul><div id="ci" hidden></div></section>
+<section class="wrap sec" id="lookbook"><div class="look"><div class="big"><img data-i="10" data-lazy data-par=".12" data-sc="1.22" alt="Low dark sofa and marble table under warm lamps beside a tall window"></div>
+<div class="t"><h2 class="serif">Evening, lowered.</h2><p>The Dusk sofa sits 34 cm off the floor. Pair it with the Eclipse table and one lamp, then leave the overhead light off.</p><button class="btn" data-open="dusk">View the Dusk sofa <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div></div></section>
+<div class="wrap pair"><div class="rv"><img data-i="5" data-lazy alt="Leather sofa, walnut drums and boucle armchair" style="object-position:30% 50%"></div><div class="rv" style="--d:.1s"><img data-i="4" data-lazy alt="Cream sofa with leather sling chairs on a patterned rug"></div></div>
+<section class="wrap sec" id="craft"><div class="sh"><h2 class="serif rv">Joined, not glued.</h2><p class="rv">How every piece is made, and why it lasts.</p></div>
+<div class="cr"><div class="cim rv"><img data-i="3" data-lazy alt="Boucle armchair beside a walnut side table"></div><div class="cg"><div class="cc rv" style="--d:0.0s"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20V10l9-6 9 6v10zM9 20v-6h6v6"/></svg><h3>Solid timber frames</h3><p>Oak and walnut, cut from single boards where the piece allows, so the grain runs the way the part carries load.</p></div><div class="cc rv" style="--d:0.08s"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12c0-5 4-8 8-8s8 3 8 8-4 8-8 8M4 12h8"/></svg><h3>Loose, heavy linen</h3><p>Washable covers in undyed and mineral tones. They crease and soften instead of pilling.</p></div><div class="cc rv" style="--d:0.16s"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/></svg><h3>Surfaces left honest</h3><p>Oiled rather than lacquered. Marks can be sanded out, and a repair costs far less than a replacement.</p></div><div class="cc rv" style="--d:0.24s"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 6l4 4-9 9H5v-4zM12 8l4 4"/></svg><h3>Ten-year frame guarantee</h3><p>Demo copy: replace with your real warranty terms before launch.</p></div></div></div></section>
+<section class="news wrap"><div class="in"><h2 class="serif rv">New pieces, twice a year.</h2>
+<form id="nf" novalidate><label for="em">Email address</label><div class="row"><input id="em" type="email" autocomplete="email" required aria-describedby="nm"><button class="btn" type="submit">Subscribe</button></div><p class="msg" id="nm" role="status"></p></form></div></section></main>
+
+
+<footer class="wrap"><div class="fg"><div><a class="logo" href="#top">MASSA</a><p style="color:var(--mute);margin-top:10px;max-width:30ch">Furniture with weight. Fictional demo brand.</p></div>
+<div><h3>Customer service</h3><ul><li><a href="#">Delivery</a></li><li><a href="#">Returns</a></li><li><a href="#">Care guide</a></li></ul></div>
+<div><h3>Company</h3><ul><li><a href="#">Contact: hello@massa.example</a></li><li><a href="#">Privacy</a></li><li><a href="#">Terms</a></li></ul></div>
+<div><h3>Follow</h3><ul><li><a href="#">Instagram</a></li><li><a href="#">Pinterest</a></li></ul></div></div>
+<div class="fw serif" aria-hidden="true">MASSA</div><div class="fine"><span>© 2026 MASSA (demo)</span><span>Product data and prices are placeholders.</span></div></footer>
+
+<div class="scrim" id="sc"></div>
+<aside class="drawer" id="dr" role="dialog" aria-modal="true" aria-labelledby="dt" aria-hidden="true"><div class="dh"><h2 id="dt">Your cart</h2><button id="cx">Close</button></div><div class="items" id="it"></div><div class="df" id="df"></div></aside>
+<dialog id="md" aria-labelledby="mt"></dialog><div class="toast" id="ts" role="status"></div>
+
+<script src="js/main.js"></script></body></html>
